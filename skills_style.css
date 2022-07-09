@@ -1,0 +1,72 @@
+
+#skill-box{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background: #F9F9F9;
+    box-sizing: border-box;
+}
+
+.headers{
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    color: #152D35;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.skill-item{
+    display: grid;
+    background: none;
+    /*box-sizing: border-box;*/
+    grid-template-columns: 25% 1fr 1fr 1fr;
+    grid-template-rows: 150px auto;
+    align-items: start;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.skill-label{
+    font-style: none;
+    background: #E4DCCF;
+    letter-spacing: 2px;
+    font-family: Staatliches, sans-serif;
+    font-weight: 200;
+    margin-top: 0;
+    transition: background 0.3s ease-in;
+}
+
+.skill-item > *{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-card{
+    background: linear-gradient(135deg,
+    rgba(255, 255, 255, .3),
+    rgba(255,255, 255, .4) 50%,
+    rgba(71, 181, 255, .05) 60% ,
+    rgba(255, 255, 255, 0.3) 70%);
+    background-position: 100%;
+    background-size: 500%;
+
+    backdrop-filter: blur(10px);
+
+    font-family: "finlandica", sans-serif;
+    padding: 10px 25px;
+}
+
+.skill-card:hover{
+    background-position: 0;
+    transition: background-position .5s ease-in;
+}

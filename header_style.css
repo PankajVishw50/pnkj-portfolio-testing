@@ -1,0 +1,89 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("Resources/Mountain01.jpg");
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    background: linear-gradient(to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3));
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: transform 1s ease-in-out,
+                background .5s ease-in-out;
+    background-size: 200%;
+    background-position: 100%;
+}
+
+.main:hover{
+    background-position: 0;
+}
+
+.main h1{
+    text-align: center;
+    font-family: Staatliches, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main p{
+    font-size: 20px;
+    /*font-size: 1.5vw;*/
+    font-family: "Twinkle star", sans-serif;
+    width: 70%;
+    height: 40%;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+
+.button-container{
+
+
+}
+
+.button-container button{
+    border-style: none;
+    width: 75px;
+    padding: 15px 10px;
+    background: linear-gradient(to right,
+    rgba(255, 249, 215, 0.4),
+    rgba(255, 255, 255, .1));
+    background-size: 200%;
+    backdrop-filter: blur(10px);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: background 0.2s ease-in,
+                font-size 1s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background-position: -100%;
+}

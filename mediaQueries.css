@@ -1,0 +1,138 @@
+
+
+@media (max-width:700px){
+    .main{
+        height: 60%;
+        justify-content: space-evenly;
+    }
+
+    #para-temp{
+        font-size: 10px;
+        letter-spacing: normal;
+        word-spacing: normal;
+        margin: 0;
+        /*height: 30%;*/
+        height: 40%;
+    }
+
+    nav h1{
+        margin: 0;
+    }
+}
+
+@media (min-height: 700px) and (max-width: 700px) {
+    .main{
+        height: 50%;
+    }
+}
+
+@media (max-width: 400px){
+    #para-temp{
+        font-size: 10px;
+        overflow: scroll;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) and (max-height: 900px) {
+    #para-temp{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 374px) {
+    #para-temp{
+        font-size: 7px;
+    }
+    .skill-container{
+        font-size: 100vw;
+    }
+
+    .skill-label{
+        /*font-size: 1px;*/
+        margin: 0;
+    }
+    .skill-item{
+        font-size: 2vw;
+
+    }
+
+}
+
+@media (max-width: 1000px){
+    .skill-container{
+        flex-direction: row;
+        width: 100vw;
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+
+    .skill-item{
+        flex: 1;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .skill-card{
+        background: inherit;
+    }
+    .skill-card:hover{
+        transition: none;
+    }
+
+}
+
+@media (max-width: 1000px) and (min-height: 600px) {
+    .swiper{
+        width: 70%;
+        height: 80%;
+    }
+
+    .view-container{
+        flex-direction: column;
+    }
+
+    video{
+        width: 100%;
+    }
+
+    .project-btn-container{
+        margin: 10px 0 0 0;
+        width: 100%;
+    }
+
+    .project-btn-container button{
+        width: 100%;
+    }
+
+    .project-name{
+        font-size: 15px;
+    }
+
+    .project-description{
+        font-size: 4vw;
+
+    }
+}
+
+@media (max-width: 550px){
+    .swiper{
+        width: 60%;
+        height: 50%;
+        margin-right: 90px;
+    }
+
+    .project-btn{
+        height: 10px;
+    }
+
+    .project-description{
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+
+    video{
+        min-width: 100px;
+    }
+}

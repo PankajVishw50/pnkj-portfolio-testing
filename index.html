@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!--    Styling Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Finlandica&family=Staatliches&family=Twinkle+Star&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="skills_style.css">
+    <link rel="stylesheet" href="projects_style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pankaj Portfolio</title>
+</head>
+
+<body>
+
+<nav>
+    <div class="main">
+        <h1>Hello</h1>
+
+        <p id="para-temp">
+            Python and FrontEnd developer . I don’t claim any expertise and may not have all the experience you would
+            prefer, but I believe that my enthusiasm and willingness to learn make me a strong candidate. I have good
+            knowledge of Python OOP, GUI framework Tkinter.I can build normal usage websites without any hassle. Skilled
+            in database like mysql and sqlite,
+            Comfortable with version control system(VCS) like Git
+        </p>
+
+        <div class="button-container">
+            <button id="aboutContact-btn">
+                Contact
+            </button>
+
+            <button id="skills"
+            onclick="location.href= '#skill-box'">
+                Skills
+            </button>
+
+        </div>
+
+    </div>
+</nav>
+
+<section id="skill-box">
+    <div class="headers">Skills</div>
+
+    <div class="skill-container">
+
+        <div id="frontend" class="skill-item">
+            <div class="skill-label">FrontEnd</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">Css</div>
+            <div class="skill-card">Javascript</div>
+        </div>
+
+        <div id="Python" class="skill-item">
+            <div class="skill-label">Python</div>
+            <div class="skill-card">UI Development(Tkinter)</div>
+            <div class="skill-card">Object Oriented Programming</div>
+            <div class="skill-card">Database(mysql)</div>
+        </div>
+        
+        <div id="other" class="skill-item">
+            <div class="skill-label">Others</div>
+            <div class="skill-card">3d Modelling</div>
+            <div class="skill-card">Illustrator</div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="project-box">
+
+    <div id="project-header" class="headers">Projects</div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide project-container">
+            <div class="project-name">1.Garbage Typer</div>
+            <div class="view-container">
+                <video src="Resources/G-typer_product_video.mp4" controls></video>
+                <div class="project-btn-container">
+                    <button class="project-button"
+                    onclick="window.open('https://github.com/PankajVishw50/Garbage-Typer')">
+                        GitHub
+                    </button>
+
+                </div>
+            </div>
+            <div class="project-description">
+                This is a GUI based typing app in which
+                you can practice your typing speed <br>
+                download Garbage-typer_APP.zip <small style="color:#333333">(available on github)</small>  <br>
+                to get Executable file (exe) <br>
+
+
+            </div>
+        </div>
+        <div class="swiper-slide project-container">
+            <div class="project-name">2.Monty Hall </div>
+            <div class="view-container">
+                <video src="Resources/MontyHall_Product_showcase.mp4" controls></video>
+                <div class="project-btn-container">
+                    <button class="project-button"
+                    onclick="window.open('https://github.com/PankajVishw50/Monty-hall')">
+                        GitHub
+                    </button>
+
+                    <button class="project-button"
+                    onclick="window.open('https://Monty-hall.live')">
+                        Website
+                    </button>
+
+
+                </div>
+            </div>
+            <div class="project-description">
+                Monty Hall is a brain-teaser
+                and this app demonstrate this effect
+                in visual way. for easy understanding
+                You can play game and see yourself
+
+            </div>
+        </div>
+        <div class="swiper-slide project-container">
+            <div class="project-name">3.Website For Brain-Teaser </div>
+            <div class="view-container">
+                <div class="project-btn-container">
+
+                    <button class="project-button"
+                    onclick="window.open('https://Monty-hall.live')">
+                        Website
+                    </button>
+
+                </div>
+            </div>
+            <div class="project-description">
+                This Website is created for previous
+                project.It shows what monty-hall problem is.
+            </div>
+        </div>
+
+        <div class="swiper-slide project-container">
+            Slide 4
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
