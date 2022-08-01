@@ -2,17 +2,19 @@
 
 @media (max-width:700px){
     .main{
-        height: 60%;
+        max-height: 70%;
+        width: 90%;
         justify-content: space-evenly;
     }
 
     #para-temp{
-        font-size: 10px;
+        font-size: 20px;
         letter-spacing: normal;
         word-spacing: normal;
         margin: 0;
         /*height: 30%;*/
-        height: 40%;
+        height: 60%;
+        width: 90%;
     }
 
     nav h1{
@@ -24,25 +26,31 @@
     .main{
         height: 50%;
     }
+    #para-temp{
+        color: black;
+    }
 }
 
 @media (max-width: 400px){
     #para-temp{
-        font-size: 10px;
+        font-size: 16px;
         overflow: scroll;
     }
 }
 
 @media (min-width: 700px) and (max-width: 1200px) and (max-height: 900px) {
     #para-temp{
-        font-size: 14px;
-        line-height: 15px;
+        font-size: 20px;
+        line-height: 20px;
     }
 }
 
 @media (max-width: 374px) {
+    .main{
+        max-height: 70%;
+    }
     #para-temp{
-        font-size: 7px;
+        font-size: 15px;
     }
     .skill-container{
         font-size: 100vw;
@@ -117,9 +125,9 @@
 
 @media (max-width: 550px){
     .swiper{
-        width: 60%;
+        width: 80%;
         height: 50%;
-        margin-right: 90px;
+        /*margin-right: 90px;*/
     }
 
     .project-btn{
@@ -131,8 +139,7 @@
         margin-top: 10px;
     }
 
-
     video{
-        min-width: 100px;
+        min-width: 100%;
     }
 }
